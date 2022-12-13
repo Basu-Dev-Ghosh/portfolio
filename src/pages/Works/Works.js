@@ -83,7 +83,7 @@ const Works = () => {
                     desc: "A social media website with some functionalities like edit profile,add post,like on the post,comment on the post,check others profile etc",
                     links: [
                       "https://github.com/Basu-Dev-Ghosh/HiFi",
-                      "https://basu-dev-ghosh.github.io/HiFi/",
+                      "https://hi-fi-client.vercel.app/#/",
                     ],
                   }}
                   id={"work2"}
