@@ -1,0 +1,372 @@
+input {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d324d;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  overflow-y: auto;
+  background: #020202;
+}
+
+.screen-body-item {
+  flex: 0;
+  padding: 140px;
+}
+
+.app-title p {
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Comfortaa", cursive;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 175px;
+  height: 4px;
+  background: #0616a4;
+  animation: linegrow 1s ease;
+}
+@keyframes linegrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 175px;
+  }
+}
+
+.contact-socials {
+  padding: 30px;
+  width: 100%;
+  /* background-color: #fff; */
+  margin-top: 30px;
+  display: flex;
+  margin-left: 130px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.contact-socials i {
+  font-size: 31px;
+  margin-right: 60px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.contact-socials i:hover {
+  scale: 1.2;
+  color: #0616a4;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+}
+.contacts .contact-info {
+  display: flex;
+  align-items: center;
+  margin: 14px 0;
+}
+.contact-info i {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+  margin-left: 0;
+}
+.contact-info p {
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin: 0 20px;
+}
+.app-form-group {
+  margin-bottom: 15px;
+  width: 450px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 25px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #08558c;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  /* margin: 0 40px; */
+  margin-top: 50px;
+  font-family: "Comfortaa", cursive;
+}
+.app-form-button:nth-child(1) {
+  margin-right: 50px;
+}
+
+.app-form-button:hover {
+  color: #ffffff;
+}
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    padding: 80px;
+  }
+
+  .app-title p {
+    font-size: 18px;
+    letter-spacing: 6px;
+  }
+  .app-title {
+    font-size: 44px;
+    margin-left: -30px;
+  }
+  .app-title:after {
+    bottom: -15px;
+    height: 3px;
+  }
+  .contacts {
+    margin-top: 40px;
+    margin-left: 18px;
+  }
+  .contacts .contact-info {
+    display: flex;
+    align-items: center;
+    margin: 3px 0px;
+  }
+  .contact-info i {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 0px;
+  }
+  .contact-info p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin: 0 15px;
+  }
+
+  .screen-body-item {
+    margin-top: 0;
+  }
+  .app-form-group {
+    margin-bottom: 0px;
+    width: 350px;
+  }
+  .app-form {
+    width: 100%;
+  }
+  .screen-body-item {
+    width: 100%;
+  }
+  .app-form-group.message {
+    margin-top: 0px;
+  }
+
+  .app-form-group.buttons {
+    margin-bottom: 0px !important;
+    text-align: center;
+  }
+
+  .app-form-control {
+    width: 80%;
+    padding: 34px 0;
+    font-size: 15px;
+    margin-left: 35px;
+  }
+
+  .app-form-control::placeholder {
+    color: #666;
+  }
+
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #08558c;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Comfortaa", cursive;
+  }
+  .app-form-button:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .app-form-button:hover {
+    color: #ffffff;
+  }
+  .screen-body-item {
+    padding: 1px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container {
+    height: 90vh;
+    margin: 0 20px;
+    margin-top: -20px;
+    overflow-y: scroll;
+  }
+
+  .app-title p {
+    font-size: 10px;
+    letter-spacing: 6px;
+  }
+  .app-title {
+    font-size: 40px;
+    margin-left: -30px;
+  }
+  .app-title:after {
+    bottom: -15px;
+    height: 3px;
+  }
+  .contacts {
+    margin-top: 36px;
+    margin-left: 0px;
+  }
+  .contacts .contact-info {
+    display: flex;
+    align-items: center;
+    margin: 2px 0px;
+  }
+  .contact-info i {
+    font-size: 10px;
+    color: #fff;
+    margin-right: 0px;
+  }
+  .contact-info p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 0 15px;
+  }
+
+  .screen-body-item {
+    margin-top: 0;
+  }
+  .app-form-group {
+    margin-bottom: 0px;
+    width: 350px;
+  }
+  .app-form {
+    width: 100%;
+  }
+  .screen-body-item {
+    width: 100%;
+  }
+  .app-form-group.message {
+    margin-top: 0px;
+  }
+
+  .app-form-group.buttons {
+    margin-bottom: 0px !important;
+    text-align: center;
+  }
+
+  .app-form-control {
+    width: 80%;
+    padding: 25px 0;
+    font-size: 12px;
+    margin-left: 35px;
+  }
+
+  .app-form-control::placeholder {
+    color: #666;
+  }
+
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #08558c;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: "Comfortaa", cursive;
+  }
+  .app-form-button:nth-child(1) {
+    margin-right: 0px;
+  }
+
+  .app-form-button:hover {
+    color: #ffffff;
+  }
+  .screen-body-item {
+    padding: 1px;
+  }
+}

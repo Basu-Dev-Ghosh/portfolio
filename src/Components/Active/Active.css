@@ -1,0 +1,14 @@
+.activa {
+  font-size: 330px;
+  position: absolute;
+  z-index: 0.8;
+  opacity: 0.255;
+  left: -450px;
+  transform: rotate(-90deg);
+  top: 300px;
+}
+@media screen and (max-width: 600px) {
+  .activa {
+    display: none;
+  }
+}

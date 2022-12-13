@@ -1,0 +1,12 @@
+.header-icon {
+  position: relative;
+  top: 32px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  display: inline;
+  z-index: 122;
+}
+.header-icon i {
+  font-size: 60px;
+}

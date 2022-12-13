@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  background-color: #000;
+}
+.home {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden !important;
+}
+.line {
+  width: 1000px;
+  height: 4px;
+  background-color: #fff;
+  margin: 10px;
+  position: absolute;
+}
+.line:nth-child(1) {
+  width: 1400px;
+  top: 40px;
+  left: 50px;
+  transition: 0.2s;
+  animation: lin1 2s ease-in-out 1 forwards;
+  animation-delay: 0.1s;
+}
+
+.line:nth-child(2) {
+  transform: rotate(90deg);
+  top: 40px;
+  left: 400px;
+  animation: lin2 2s ease-in-out 1 forwards;
+  animation-delay: 0.1s;
+}
+.line:nth-child(3) {
+  transform: rotate(90deg);
+  top: 904px;
+  left: -348px;
+  animation: lin3 2s ease-in-out 1 forwards;
+  animation-delay: 0.1s;
+}
+.line:nth-child(4) {
+  width: 1700px;
+  bottom: 120px;
+  left: 0;
+  animation: lin4 2s ease-in-out 1 forwards;
+  animation-delay: 0.1s;
+}
+
+.profile-img {
+  width: 640px;
+  position: absolute;
+  left: 220px;
+  bottom: -30px;
+  top: 100px;
+}
+.signature {
+  position: absolute;
+  right: 250px;
+  top: 350px;
+}
+
+.signature h1 {
+  font-family: "Playlist Script";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 150px;
+}
+.signature h1 span {
+  color: #bf2e97;
+}
+
+.under-signature {
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 20px;
+}
+.typewritter {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #bf2e97;
+  font-weight: bold;
+  font-size: 44px !important;
+  font-family: "JMH Typewriter-Black", sans-serif;
+}
+.socials {
+  color: #ffffff;
+  position: absolute;
+  bottom: 50px;
+  right: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials i {
+  padding: 0 40px;
+  font-size: 40px;
+  color: #b7acac;
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+.socials i:hover {
+  transform: scale(1.4);
+  color: #bf2e97;
+}
+
+@keyframes lin1 {
+  0% {
+    left: -1470px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+@keyframes lin2 {
+  0% {
+    top: -540px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+@keyframes lin3 {
+  0% {
+    top: 1604px;
+  }
+  100% {
+    top: 904px;
+  }
+}
+@keyframes lin4 {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+  .signature {
+    left: 1050px;
+    top: 452px;
+  }
+  .socials {
+    bottom: -156px;
+    left: 1308px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .line {
+    width: 100px;
+  }
+  .line:nth-child(1) {
+    display: none;
+  }
+  .line:nth-child(2) {
+    transform: rotate(90deg);
+    top: 180px;
+    left: 100px;
+    width: 400px;
+  }
+  .line:nth-child(3) {
+    display: none;
+  }
+  .line:nth-child(4) {
+    width: 170px;
+    top: 40px;
+    left: 120px;
+  }
+  .profile-img {
+    width: 300px;
+    left: 35px;
+    /* z-index: -22; */
+  }
+  .signature {
+    right: 55px;
+    top: 432px;
+  }
+  .signature h1 {
+    font-size: 80px;
+  }
+  .under-signature {
+    font-size: 15px;
+  }
+  .typewritter {
+    letter-spacing: 10px;
+    font-size: 27px !important;
+  }
+  .socials {
+    bottom: 16px;
+    left: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials i {
+    padding: 0 20px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,291 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.about .profile-section {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  z-index: -2;
+  border-radius: 5px;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+}
+.profile-image {
+  padding: 50px;
+  width: 40%;
+  z-index: 1;
+}
+.profile-image img {
+  z-index: 1;
+  width: 96%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-about {
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 44px;
+}
+.profile-about h1 {
+  font-size: 70px;
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.profile-about h2 {
+  margin-top: 10px;
+  font-weight: lighter;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 5px;
+  color: #1aa810;
+}
+.profile-about p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 30;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 22px;
+}
+.profile-about p span {
+  color: #1aa810;
+  font-weight: bold;
+  font-size: 16px;
+}
+.info-container {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.5;
+}
+.info {
+  margin-right: 100px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.info i {
+  text-align: center;
+  margin-top: 16px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #1aa810;
+}
+.info p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 17px;
+  /* text-transform: uppercase; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.info p:nth-child(3) {
+  margin-left: 18px;
+  font-size: 15px;
+  color: #1aa810;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.button-container {
+  display: flex;
+  margin-top: 80px;
+}
+.button-container button {
+  cursor: pointer !important;
+  padding: 20px;
+  width: 350px;
+  margin: 0 25px;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: "Comfortaa", cursive;
+  transition: 0.3s;
+}
+.button1 {
+  color: #fff;
+  background-color: #1aa810;
+}
+
+.button2 {
+  color: #1aa810;
+  background-color: rgb(250, 250, 250);
+}
+
+.skills {
+  width: 100%;
+  margin-top: 190px;
+  padding: 60px 0;
+}
+.services {
+  width: 100%;
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .about .profile-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  .profile-image {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .profile-image img {
+    width: 370px;
+  }
+  .profile-about {
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  .profile-about h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .profile-about h2 {
+    margin-top: 9px;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+  .profile-about p {
+    margin-top: 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+  .profile-about p span {
+    font-size: 14px;
+  }
+  .info-container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .info {
+    margin-right: 0px;
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button-container a .button1 {
+    padding: 14px;
+    width: 249px !important;
+    margin: 10px 0px;
+  }
+  .button-container button {
+    padding: 14px;
+    width: 249px !important;
+    margin: 10px 20px;
+  }
+  .skills {
+    width: 100%;
+    padding: 0px 0;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about .profile-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  .profile-image {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .profile-image img {
+    width: 370px;
+  }
+  .profile-about {
+    width: 100%;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  .profile-about h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .profile-about h2 {
+    margin-top: 9px;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+  .profile-about p {
+    margin-top: 13px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+  }
+  .profile-about p span {
+    font-size: 14px;
+  }
+  .info-container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .info {
+    margin-right: 0px;
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button-container a .button1 {
+    padding: 14px;
+    width: 249px !important;
+    margin: 10px 0px;
+  }
+  .button-container button {
+    padding: 14px;
+    width: 249px !important;
+    margin: 10px 20px;
+  }
+  .skills {
+    width: auto;
+    padding: 10px 0;
+    margin-top: 60px;
+  }
+}
