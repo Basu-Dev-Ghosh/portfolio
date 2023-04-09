@@ -26,12 +26,7 @@ const Navbar = ({ navColor, navbg }) => {
                     <a href="#" className="close" />
                     <div className="nav">
                         <ul className="nav_list" >
-                            <motion.div whileHover={
-                                {
-                                    left: 190,
-                                    scale: 1.2,
-                                }
-                            } className="nav_list_item i1">
+                            <motion.div className="nav_list_item i1">
                                 <li >
                                     <NavLink to="/">
                                         Home
@@ -39,29 +34,14 @@ const Navbar = ({ navColor, navbg }) => {
 
                                 </li>
                             </motion.div>
-                            <motion.div whileHover={
-                                {
-                                    left: 30,
-                                    scale: 1.2,
-                                }
-                            } className="nav_list_item i2">
+                            <motion.div className="nav_list_item i2">
                                 <li><NavLink to="/about">About</NavLink></li>
                             </motion.div>
-                            <motion.div whileHover={
-                                {
-                                    right: 90,
-                                    scale: 1.2,
-                                }
-                            } className="nav_list_item i3">
+                            <motion.div className="nav_list_item i3">
 
                                 <li><NavLink to="/works">Works</NavLink></li>
                             </motion.div>
-                            <motion.div whileHover={
-                                {
-                                    right: 90,
-                                    scale: 1.2,
-                                }
-                            } className="nav_list_item i4">
+                            <motion.div className="nav_list_item i4">
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                             </motion.div>
                         </ul>
